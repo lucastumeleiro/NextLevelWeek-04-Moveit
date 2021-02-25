@@ -101,20 +101,16 @@
 
   font-size: 1rem;
   font-weight: 600;
-  transition: 0.7s ease;
+  transition: 0.4s cubic-bezier(0.22, 1.95, 1, 1.36);
 }
 
 .challengeActive footer button.challengeFailedButton {
   background: var(--red);
 }
-.challengeActive footer button.challengeFailedButton:hover {
-  background: var(--red-dark);
-}
-
 .challengeActive footer button.challengeSucceededButton {
   background: var(--green);
 }
 
-.challengeActive footer button.challengeSucceededButton:hover {
-  background: var(--green-dark);
+.challengeActive footer button:hover {
+  transform: scale(1.03);
 }
