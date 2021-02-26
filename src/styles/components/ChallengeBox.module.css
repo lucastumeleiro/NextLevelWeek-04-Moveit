@@ -63,12 +63,22 @@
   border-bottom: 1px solid var(--gray-line);
 }
 
+.challengeActive header p:hover {
+  transform: translate3d(2px, -2px, 0);
+  transition: 0.2s ease;
+}
+
 .challengeActive main {
   display: flex;
   flex: 1;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.challengeActive main img:hover {
+  transform: translate3d(2px, -2px, 0);
+  transition: 0.2s ease;
 }
 
 .challengeActive main strong {
@@ -78,8 +88,22 @@
   margin: 1.5rem 0 1rem;
 }
 
+.challengeActive main strong:hover {
+  color: var(--blue);
+  transform: translate3d(2px, -2px, 0);
+  transition: 0.2s ease;
+}
+
 .challengeActive main p {
   line-height: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.challengeActive main p:hover {
+  font-weight: 500;
+  color: var(--blue);
+  transition: 0.2s;
+  transform: translate3d(2px, -2px, 0);
 }
 
 .challengeActive footer {
@@ -102,6 +126,7 @@
   font-size: 1rem;
   font-weight: 600;
   transition: 0.4s cubic-bezier(0.22, 1.95, 1, 1.36);
+  outline: none;
 }
 
 .challengeActive footer button.challengeFailedButton {
@@ -113,4 +138,16 @@
 
 .challengeActive footer button:hover {
   transform: scale(1.03);
+}
+
+@media (max-width: 650px) {
+  .challengeActive main {
+    margin-top: 2rem;
+  }
+  .challengeActive footer {
+    margin-top: 3rem;
+  }
+  .challengeActive footer button {
+    height: 4rem;
+  }
 }

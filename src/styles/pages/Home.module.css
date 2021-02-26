@@ -17,3 +17,12 @@
 
   align-content: center;
 }
+@media (max-width: 650px) {
+  .container section {
+    display: flex;
+    flex-direction: column;
+  }
+  .profileContainer {
+    margin-top: 5rem;
+  }
+}
