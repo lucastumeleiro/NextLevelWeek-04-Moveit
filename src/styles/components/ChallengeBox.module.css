@@ -126,14 +126,15 @@
   font-size: 1rem;
   font-weight: 600;
   transition: 0.4s cubic-bezier(0.22, 1.95, 1, 1.36);
-  outline: none;
 }
 
 .challengeActive footer button.challengeFailedButton {
   background: var(--red);
+  outline-color: var(--red);
 }
 .challengeActive footer button.challengeSucceededButton {
   background: var(--green);
+  outline-color: var(--green);
 }
 
 .challengeActive footer button:hover {
